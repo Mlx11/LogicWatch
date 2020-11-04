@@ -1,4 +1,3 @@
-  </circuit>
   <circuit name="2bit_counter">
     <a name="circuit" val="2bit_counter"/>
     <a name="clabel" val=""/>
@@ -52,3 +51,4 @@
     <comp lib="1" loc="(160,70)" name="NOT Gate">
       <a name="size" val="20"/>
     </comp>
+  </circuit>
