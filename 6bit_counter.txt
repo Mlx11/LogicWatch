@@ -1,4 +1,3 @@
-  </circuit>
   <circuit name="6bit_counter">
     <a name="circuit" val="6bit_counter"/>
     <a name="clabel" val=""/>
@@ -162,3 +161,4 @@
     <comp lib="1" loc="(320,160)" name="OR Gate">
       <a name="size" val="30"/>
     </comp>
+  </circuit>
