@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project source="2.15.0" version="1.0">
-  This file is intended to be loaded by Logisim-evolution (https://github.com/reds-heig/logisim-evolution).
-
-  <lib desc="#Wiring" name="0">
+This file is intended to be loaded by Logisim-evolution (https://github.com/reds-heig/logisim-evolution).
+<lib desc="#Wiring" name="0">
     <tool name="Splitter">
       <a name="facing" val="west"/>
     </tool>
@@ -259,7 +258,6 @@ end TCL_Generic;&#13;
     <wire from="(2360,1860)" to="(2420,1860)"/>
     <wire from="(2550,1730)" to="(2610,1730)"/>
     <wire from="(1780,580)" to="(2300,580)"/>
-    <wire from="(2680,1630)" to="(2680,1640)"/>
     <wire from="(2660,540)" to="(2840,540)"/>
     <wire from="(1570,1220)" to="(1840,1220)"/>
     <wire from="(560,110)" to="(560,400)"/>
@@ -297,7 +295,6 @@ end TCL_Generic;&#13;
     <wire from="(1780,600)" to="(2150,600)"/>
     <wire from="(1860,1710)" to="(1860,1720)"/>
     <wire from="(1510,640)" to="(1560,640)"/>
-    <wire from="(530,210)" to="(640,210)"/>
     <wire from="(2320,1720)" to="(2320,1840)"/>
     <wire from="(1480,780)" to="(1480,980)"/>
     <wire from="(1770,1060)" to="(1770,1630)"/>
@@ -375,11 +372,11 @@ end TCL_Generic;&#13;
     <wire from="(1530,410)" to="(1580,410)"/>
     <wire from="(1900,1720)" to="(1900,1850)"/>
     <wire from="(1910,1730)" to="(1910,1860)"/>
-    <wire from="(90,330)" to="(90,360)"/>
     <wire from="(1800,330)" to="(2510,330)"/>
     <wire from="(2430,1580)" to="(2430,1650)"/>
     <wire from="(2710,1830)" to="(2710,1840)"/>
     <wire from="(1570,1240)" to="(1830,1240)"/>
+    <wire from="(90,330)" to="(90,370)"/>
     <wire from="(2600,1650)" to="(2640,1650)"/>
     <wire from="(2750,1710)" to="(2750,1740)"/>
     <wire from="(2550,1830)" to="(2550,1860)"/>
@@ -406,7 +403,6 @@ end TCL_Generic;&#13;
     <wire from="(2150,600)" to="(2150,1630)"/>
     <wire from="(2410,1720)" to="(2410,1850)"/>
     <wire from="(2420,1730)" to="(2420,1860)"/>
-    <wire from="(550,130)" to="(640,130)"/>
     <wire from="(210,210)" to="(230,210)"/>
     <wire from="(2320,350)" to="(2820,350)"/>
     <wire from="(2800,700)" to="(2840,700)"/>
@@ -664,10 +660,6 @@ end TCL_Generic;&#13;
     <comp loc="(450,190)" name="input_ctrl">
       <a name="label" val="input_ctrl_2"/>
     </comp>
-    <comp lib="5" loc="(80,360)" name="DipSwitch">
-      <a name="label" val="DipSwitch_1"/>
-      <a name="number" val="10"/>
-    </comp>
     <comp lib="5" loc="(130,110)" name="Button">
       <a name="label" val="Button_1"/>
     </comp>
@@ -787,7 +779,9 @@ end TCL_Generic;&#13;
       <a name="width" val="7"/>
       <a name="value" val="0x3f"/>
     </comp>
-    <comp loc="(3040,190)" name="alarm_clock_interrupter"/>
+    <comp loc="(3040,190)" name="alarm_clock_interrupter">
+      <a name="label" val="alarm_clock_interrupter_2"/>
+    </comp>
     <comp lib="0" loc="(2820,190)" name="Constant">
       <a name="facing" val="south"/>
       <a name="width" val="7"/>
@@ -818,7 +812,9 @@ end TCL_Generic;&#13;
       <a name="width" val="7"/>
       <a name="value" val="0x3f"/>
     </comp>
-    <comp loc="(1800,310)" name="state4_countdown"/>
+    <comp loc="(1800,310)" name="state4_countdown">
+      <a name="label" val="state4_countdown_1"/>
+    </comp>
     <comp lib="0" loc="(1810,1910)" name="Constant"/>
     <comp lib="2" loc="(1820,1930)" name="Decoder">
       <a name="facing" val="south"/>
@@ -826,33 +822,49 @@ end TCL_Generic;&#13;
     </comp>
     <comp lib="5" loc="(1880,2020)" name="LED">
       <a name="facing" val="north"/>
+      <a name="label" val="LED_4"/>
     </comp>
     <comp lib="5" loc="(1840,2020)" name="LED">
       <a name="facing" val="north"/>
+      <a name="label" val="LED_2"/>
     </comp>
     <comp lib="5" loc="(1960,2020)" name="LED">
       <a name="facing" val="north"/>
+      <a name="label" val="LED_8"/>
     </comp>
     <comp lib="5" loc="(1860,2020)" name="LED">
       <a name="facing" val="north"/>
+      <a name="label" val="LED_3"/>
     </comp>
     <comp lib="5" loc="(1900,2020)" name="LED">
       <a name="facing" val="north"/>
+      <a name="label" val="LED_5"/>
     </comp>
     <comp lib="5" loc="(1940,2020)" name="LED">
       <a name="facing" val="north"/>
+      <a name="label" val="LED_7"/>
     </comp>
     <comp lib="5" loc="(1920,2020)" name="LED">
       <a name="facing" val="north"/>
+      <a name="label" val="LED_6"/>
     </comp>
     <comp lib="5" loc="(1820,2020)" name="LED">
       <a name="facing" val="north"/>
+      <a name="label" val="LED_1"/>
     </comp>
     <comp loc="(1060,70)" name="main_statemachine">
       <a name="label" val="main_statemachine_1"/>
     </comp>
-    <comp lib="9" loc="(1126,139)" name="Text">
+    <comp lib="5" loc="(80,370)" name="DipSwitch">
+      <a name="label" val="DipSwitch_1"/>
+      <a name="number" val="10"/>
+    </comp>
+    <comp lib="9" loc="(1111,92)" name="Text">
       <a name="text" val="actual state"/>
+      <a name="font" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="9" loc="(2023,2063)" name="Text">
+      <a name="text" val="last LED is never on"/>
       <a name="font" val="SansSerif plain 12"/>
     </comp>
   </circuit>
@@ -2061,7 +2073,9 @@ end TCL_Generic;&#13;
       <a name="output" val="true"/>
       <a name="label" val="b71"/>
     </comp>
-    <comp loc="(4170,2200)" name="counter24"/>
+    <comp loc="(4170,2200)" name="counter24">
+      <a name="label" val="counter24_1"/>
+    </comp>
     <comp lib="0" loc="(4550,2080)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -5166,12 +5180,12 @@ end TCL_Generic;&#13;
     <wire from="(600,240)" to="(600,310)"/>
     <wire from="(280,160)" to="(280,180)"/>
     <wire from="(280,200)" to="(280,220)"/>
-    <wire from="(700,200)" to="(740,200)"/>
+    <wire from="(700,240)" to="(740,240)"/>
     <wire from="(660,90)" to="(660,120)"/>
     <wire from="(530,200)" to="(630,200)"/>
     <wire from="(600,160)" to="(600,240)"/>
     <wire from="(240,310)" to="(600,310)"/>
-    <wire from="(700,200)" to="(700,220)"/>
+    <wire from="(700,220)" to="(700,240)"/>
     <wire from="(550,120)" to="(550,160)"/>
     <wire from="(170,140)" to="(200,140)"/>
     <wire from="(170,240)" to="(200,240)"/>
@@ -5191,9 +5205,6 @@ end TCL_Generic;&#13;
     </comp>
     <comp lib="0" loc="(240,310)" name="Pin">
       <a name="label" val="clk_10th"/>
-    </comp>
-    <comp loc="(960,180)" name="clock24h_display">
-      <a name="label" val="clock24h_display_1"/>
     </comp>
     <comp lib="1" loc="(680,220)" name="AND Gate"/>
     <comp lib="0" loc="(960,180)" name="Pin">
@@ -5261,13 +5272,19 @@ end TCL_Generic;&#13;
     <comp lib="0" loc="(740,220)" name="Ground">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="0" loc="(740,240)" name="Ground">
-      <a name="facing" val="north"/>
-    </comp>
     <comp lib="0" loc="(740,260)" name="Ground">
       <a name="facing" val="north"/>
     </comp>
     <comp lib="4" loc="(610,110)" name="D Flip-Flop"/>
+    <comp lib="0" loc="(740,280)" name="Ground">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp loc="(960,180)" name="clock24h_display">
+      <a name="label" val="clock24h_display_1"/>
+    </comp>
+    <comp lib="0" loc="(740,200)" name="Ground">
+      <a name="facing" val="north"/>
+    </comp>
   </circuit>
   <circuit name="stopwatch_logic">
     <a name="circuit" val="stopwatch_logic"/>
@@ -6513,10 +6530,10 @@ end TCL_Generic;&#13;
     <wire from="(790,130)" to="(790,730)"/>
     <wire from="(820,910)" to="(820,930)"/>
     <wire from="(770,800)" to="(770,820)"/>
-    <wire from="(240,130)" to="(790,130)"/>
-    <wire from="(860,910)" to="(860,930)"/>
     <wire from="(840,910)" to="(840,930)"/>
     <wire from="(880,910)" to="(880,930)"/>
+    <wire from="(240,130)" to="(790,130)"/>
+    <wire from="(860,910)" to="(860,930)"/>
     <wire from="(580,1040)" to="(690,1040)"/>
     <wire from="(560,930)" to="(560,950)"/>
     <wire from="(440,620)" to="(440,710)"/>
@@ -7097,7 +7114,9 @@ end TCL_Generic;&#13;
     </comp>
     <comp lib="4" loc="(3230,1840)" name="D Flip-Flop"/>
     <comp lib="0" loc="(210,800)" name="Constant"/>
-    <comp loc="(4170,2200)" name="counter24"/>
+    <comp loc="(4170,2200)" name="counter24">
+      <a name="label" val="counter24_1"/>
+    </comp>
     <comp lib="4" loc="(1750,830)" name="D Flip-Flop"/>
     <comp lib="4" loc="(910,330)" name="Counter">
       <a name="width" val="4"/>
@@ -7330,7 +7349,9 @@ end TCL_Generic;&#13;
       <a name="width" val="7"/>
       <a name="label" val="x7_7"/>
     </comp>
-    <comp loc="(1130,410)" name="clock_countdown_display"/>
+    <comp loc="(1130,410)" name="clock_countdown_display">
+      <a name="label" val="clock_countdown_display_1"/>
+    </comp>
     <comp lib="0" loc="(140,550)" name="Pin">
       <a name="label" val="b2_long"/>
     </comp>
@@ -7649,7 +7670,9 @@ end TCL_Generic;&#13;
     <comp lib="0" loc="(1230,590)" name="Ground">
       <a name="facing" val="north"/>
     </comp>
-    <comp loc="(3320,150)" name="binary_to_display_code"/>
+    <comp loc="(3320,150)" name="binary_to_display_code">
+      <a name="label" val="binary_to_display_code_1"/>
+    </comp>
     <comp lib="0" loc="(230,210)" name="Pin">
       <a name="label" val="clk_100th"/>
     </comp>
@@ -7664,7 +7687,9 @@ end TCL_Generic;&#13;
       <a name="fanout" val="7"/>
       <a name="incoming" val="7"/>
     </comp>
-    <comp loc="(1110,590)" name="binary_to_display_code"/>
+    <comp loc="(1110,590)" name="binary_to_display_code">
+      <a name="label" val="binary_to_display_code_7"/>
+    </comp>
     <comp lib="0" loc="(3590,680)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -7687,8 +7712,12 @@ end TCL_Generic;&#13;
     <comp lib="0" loc="(530,730)" name="Ground">
       <a name="facing" val="north"/>
     </comp>
-    <comp loc="(2590,310)" name="binary_to_display_code"/>
-    <comp loc="(2950,230)" name="binary_to_display_code"/>
+    <comp loc="(2590,310)" name="binary_to_display_code">
+      <a name="label" val="binary_to_display_code_3"/>
+    </comp>
+    <comp loc="(2950,230)" name="binary_to_display_code">
+      <a name="label" val="binary_to_display_code_2"/>
+    </comp>
     <comp lib="0" loc="(2010,1000)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -7730,14 +7759,18 @@ end TCL_Generic;&#13;
     <comp lib="0" loc="(230,230)" name="Pin">
       <a name="label" val="b1_short"/>
     </comp>
-    <comp loc="(1810,450)" name="binary_to_display_code"/>
+    <comp loc="(1810,450)" name="binary_to_display_code">
+      <a name="label" val="binary_to_display_code_5"/>
+    </comp>
     <comp lib="0" loc="(530,710)" name="Ground">
       <a name="facing" val="north"/>
     </comp>
     <comp lib="0" loc="(230,190)" name="Pin">
       <a name="label" val="dip_switch"/>
     </comp>
-    <comp loc="(750,670)" name="binary_to_display_code"/>
+    <comp loc="(750,670)" name="binary_to_display_code">
+      <a name="label" val="binary_to_display_code_8"/>
+    </comp>
     <comp lib="0" loc="(3570,350)" name="Splitter">
       <a name="facing" val="west"/>
       <a name="fanout" val="7"/>
@@ -7748,7 +7781,9 @@ end TCL_Generic;&#13;
       <a name="fanout" val="7"/>
       <a name="incoming" val="7"/>
     </comp>
-    <comp loc="(1450,530)" name="binary_to_display_code"/>
+    <comp loc="(1450,530)" name="binary_to_display_code">
+      <a name="label" val="binary_to_display_code_6"/>
+    </comp>
     <comp lib="0" loc="(3570,520)" name="Splitter">
       <a name="facing" val="west"/>
       <a name="fanout" val="7"/>
@@ -7765,14 +7800,18 @@ end TCL_Generic;&#13;
       <a name="fanout" val="7"/>
       <a name="incoming" val="7"/>
     </comp>
-    <comp loc="(2170,390)" name="binary_to_display_code"/>
+    <comp loc="(2170,390)" name="binary_to_display_code">
+      <a name="label" val="binary_to_display_code_4"/>
+    </comp>
     <comp lib="0" loc="(230,250)" name="Pin">
       <a name="label" val="b2_short"/>
     </comp>
     <comp lib="0" loc="(230,150)" name="Pin">
       <a name="label" val="reset"/>
     </comp>
-    <comp loc="(500,150)" name="clock_countdown"/>
+    <comp loc="(500,150)" name="clock_countdown">
+      <a name="label" val="clock_countdown_1"/>
+    </comp>
     <comp lib="9" loc="(3845,220)" name="Text">
       <a name="text" val="x7_0 and x7_1 can be deleted"/>
       <a name="font" val="SansSerif plain 12"/>
