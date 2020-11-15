@@ -9831,42 +9831,37 @@ end TCL_Generic;&#13;
     </comp>
     <comp lib="0" loc="(2040,450)" name="Constant">
       <a name="width" val="7"/>
-      <a name="value" val="0x4"/>
+      <a name="value" val="0x7d"/>
     </comp>
     <comp lib="0" loc="(2040,370)" name="Constant">
       <a name="width" val="7"/>
-      <a name="value" val="0x2"/>
+      <a name="value" val="0xe"/>
     </comp>
     <comp lib="0" loc="(2010,380)" name="Constant">
       <a name="width" val="7"/>
-      <a name="value" val="0x7f"/>
     </comp>
     <comp lib="0" loc="(2040,390)" name="Constant">
       <a name="width" val="7"/>
-      <a name="value" val="0x7f"/>
     </comp>
     <comp lib="0" loc="(2040,280)" name="Constant">
       <a name="width" val="7"/>
+      <a name="value" val="0x67"/>
     </comp>
     <comp lib="0" loc="(2040,300)" name="Constant">
       <a name="width" val="7"/>
-      <a name="value" val="0x7f"/>
     </comp>
     <comp lib="0" loc="(2010,290)" name="Constant">
       <a name="width" val="7"/>
-      <a name="value" val="0x7f"/>
     </comp>
     <comp lib="0" loc="(2040,530)" name="Constant">
       <a name="width" val="7"/>
-      <a name="value" val="0x8"/>
+      <a name="value" val="0x73"/>
     </comp>
     <comp lib="0" loc="(2040,550)" name="Constant">
       <a name="width" val="7"/>
-      <a name="value" val="0x7f"/>
     </comp>
     <comp lib="0" loc="(2010,540)" name="Constant">
       <a name="width" val="7"/>
-      <a name="value" val="0x7f"/>
     </comp>
   </circuit>
   <circuit name="state5_game_statemachine">
