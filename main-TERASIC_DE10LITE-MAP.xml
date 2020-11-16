@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<LogisimGoesFPGABoardMapInformation>
+   <GlobalMapInformation BoardName="TERASIC_DE10LITE" ToplevelCircuitName="main"/>
+   <MAPPEDCOMPONENT_1 Height="35" Key="BUTTON: /Button_1" LocationX="575" LocationY="243" Width="32"/>
+   <MAPPEDCOMPONENT_2 Height="31" Key="BUTTON: /Button_2" LocationX="575" LocationY="285" Width="30"/>
+   <MAPPEDCOMPONENT_3 Height="41" Key="DIPSWITCH: /DipSwitch_1" LocationX="371" LocationY="355" Width="237"/>
+   <MAPPEDCOMPONENT_4 Height="11" Key="LED: /Game_LED" LocationX="587" LocationY="330" Width="18"/>
+   <MAPPEDCOMPONENT_5 Height="11" Key="LED: /LED_1" LocationX="370" LocationY="330" Width="18"/>
+   <MAPPEDCOMPONENT_6 Height="11" Key="LED: /LED_2" LocationX="393" LocationY="330" Width="18"/>
+   <MAPPEDCOMPONENT_7 Height="11" Key="LED: /LED_3" LocationX="416" LocationY="330" Width="18"/>
+   <MAPPEDCOMPONENT_8 Height="11" Key="LED: /LED_4" LocationX="443" LocationY="330" Width="18"/>
+   <MAPPEDCOMPONENT_9 Height="11" Key="LED: /LED_5" LocationX="465" LocationY="330" Width="18"/>
+   <MAPPEDCOMPONENT_a Height="11" Key="LED: /LED_6" LocationX="488" LocationY="330" Width="18"/>
+   <MAPPEDCOMPONENT_b Height="11" Key="LED: /LED_7" LocationX="514" LocationY="330" Width="18"/>
+   <MAPPEDCOMPONENT_c Height="11" Key="LED: /LED_8" LocationX="538" LocationY="330" Width="18"/>
+   <MAPPEDCOMPONENT_d Height="65" Key="SEVENSEGMENT: /L_7_Segment_Display_1" LocationX="122" LocationY="336" Width="38"/>
+   <MAPPEDCOMPONENT_e Height="65" Key="SEVENSEGMENT: /L_7_Segment_Display_2" LocationX="163" LocationY="336" Width="38"/>
+   <MAPPEDCOMPONENT_f Height="65" Key="SEVENSEGMENT: /L_7_Segment_Display_3" LocationX="204" LocationY="336" Width="38"/>
+   <MAPPEDCOMPONENT_10 Height="65" Key="SEVENSEGMENT: /L_7_Segment_Display_4" LocationX="245" LocationY="336" Width="38"/>
+   <MAPPEDCOMPONENT_11 Height="65" Key="SEVENSEGMENT: /L_7_Segment_Display_5" LocationX="286" LocationY="336" Width="38"/>
+   <MAPPEDCOMPONENT_12 Height="65" Key="SEVENSEGMENT: /L_7_Segment_Display_6" LocationX="326" LocationY="336" Width="38"/>
+</LogisimGoesFPGABoardMapInformation>
