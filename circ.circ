@@ -10738,4 +10738,52 @@ end TCL_Generic;&#13;
       <a name="inputs" val="3"/>
     </comp>
   </circuit>
+  <circuit name="test">
+    <a name="circuit" val="test"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif bold 16"/>
+    <a name="circuitnamedbox" val="true"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="circuitvhdlpath" val=""/>
+    <wire from="(290,540)" to="(320,540)"/>
+    <wire from="(290,550)" to="(320,550)"/>
+    <wire from="(460,540)" to="(530,540)"/>
+    <wire from="(290,540)" to="(290,550)"/>
+    <wire from="(290,550)" to="(290,560)"/>
+    <comp lib="7" loc="(320,500)" name="VHDL Entity">
+      <a name="content">-- VHDL Code for AND gate
+
+-- Header file declaration
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+-- Entity declaration
+
+entity andGate is
+
+    port(A : in std_logic;      -- AND gate input
+         B : in std_logic;      -- AND gate input
+         Y : out std_logic);    -- AND gate output
+
+end andGate;
+
+-- Architecture definition
+
+architecture andLogic of andGate is
+
+ begin
+    
+    Y &lt;= A AND B;
+
+end andLogic; 
+</a>
+      <a name="label" val="andgate_1"/>
+    </comp>
+    <comp lib="0" loc="(290,560)" name="Pin">
+      <a name="label" val="Input_1"/>
+    </comp>
+    <comp lib="5" loc="(530,540)" name="LED"/>
+  </circuit>
 </project>
