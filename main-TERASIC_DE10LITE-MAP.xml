@@ -13,10 +13,14 @@
    <MAPPEDCOMPONENT_a Height="11" Key="LED: /LED_6" LocationX="488" LocationY="330" Width="18"/>
    <MAPPEDCOMPONENT_b Height="11" Key="LED: /LED_7" LocationX="514" LocationY="330" Width="18"/>
    <MAPPEDCOMPONENT_c Height="11" Key="LED: /LED_8" LocationX="538" LocationY="330" Width="18"/>
-   <MAPPEDCOMPONENT_d Height="65" Key="SEVENSEGMENT: /L_7_Segment_Display_1" LocationX="122" LocationY="336" Width="38"/>
-   <MAPPEDCOMPONENT_e Height="65" Key="SEVENSEGMENT: /L_7_Segment_Display_2" LocationX="163" LocationY="336" Width="38"/>
-   <MAPPEDCOMPONENT_f Height="65" Key="SEVENSEGMENT: /L_7_Segment_Display_3" LocationX="204" LocationY="336" Width="38"/>
-   <MAPPEDCOMPONENT_10 Height="65" Key="SEVENSEGMENT: /L_7_Segment_Display_4" LocationX="245" LocationY="336" Width="38"/>
-   <MAPPEDCOMPONENT_11 Height="65" Key="SEVENSEGMENT: /L_7_Segment_Display_5" LocationX="286" LocationY="336" Width="38"/>
-   <MAPPEDCOMPONENT_12 Height="65" Key="SEVENSEGMENT: /L_7_Segment_Display_6" LocationX="326" LocationY="336" Width="38"/>
+   <MAPPEDCOMPONENT_d Height="10" Key="PIN: /gnd1" LocationX="241" LocationY="8" Width="10"/>
+   <MAPPEDCOMPONENT_e Height="10" Key="PIN: /gnd2" LocationX="254" LocationY="8" Width="10"/>
+   <MAPPEDCOMPONENT_f Height="9" Key="PIN: /high1" LocationX="241" LocationY="21" Width="10"/>
+   <MAPPEDCOMPONENT_10 Height="10" Key="PIN: /high2" LocationX="254" LocationY="21" Width="10"/>
+   <MAPPEDCOMPONENT_11 Height="65" Key="SEVENSEGMENT: /L_7_Segment_Display_1" LocationX="122" LocationY="336" Width="38"/>
+   <MAPPEDCOMPONENT_12 Height="65" Key="SEVENSEGMENT: /L_7_Segment_Display_2" LocationX="163" LocationY="336" Width="38"/>
+   <MAPPEDCOMPONENT_13 Height="65" Key="SEVENSEGMENT: /L_7_Segment_Display_3" LocationX="204" LocationY="336" Width="38"/>
+   <MAPPEDCOMPONENT_14 Height="65" Key="SEVENSEGMENT: /L_7_Segment_Display_4" LocationX="245" LocationY="336" Width="38"/>
+   <MAPPEDCOMPONENT_15 Height="65" Key="SEVENSEGMENT: /L_7_Segment_Display_5" LocationX="286" LocationY="336" Width="38"/>
+   <MAPPEDCOMPONENT_16 Height="65" Key="SEVENSEGMENT: /L_7_Segment_Display_6" LocationX="326" LocationY="336" Width="38"/>
 </LogisimGoesFPGABoardMapInformation>
