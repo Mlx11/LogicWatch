@@ -9,6 +9,9 @@
     <tool name="Pin">
       <a name="facing" val="west"/>
     </tool>
+    <tool name="Clock">
+      <a name="facing" val="south"/>
+    </tool>
     <tool name="Constant">
       <a name="facing" val="west"/>
     </tool>
@@ -6844,6 +6847,7 @@ end TCL_Generic;&#13;
     <wire from="(1130,570)" to="(1130,850)"/>
     <wire from="(1260,530)" to="(1940,530)"/>
     <wire from="(1260,800)" to="(1550,800)"/>
+    <wire from="(260,1200)" to="(260,1210)"/>
     <wire from="(540,410)" to="(540,1010)"/>
     <wire from="(560,1060)" to="(560,1340)"/>
     <wire from="(160,490)" to="(910,490)"/>
@@ -6882,7 +6886,6 @@ end TCL_Generic;&#13;
     <wire from="(170,450)" to="(230,450)"/>
     <wire from="(320,850)" to="(320,990)"/>
     <wire from="(160,490)" to="(160,1010)"/>
-    <wire from="(230,1210)" to="(860,1210)"/>
     <wire from="(170,1030)" to="(350,1030)"/>
     <wire from="(570,950)" to="(610,950)"/>
     <wire from="(1300,720)" to="(1550,720)"/>
@@ -6903,6 +6906,7 @@ end TCL_Generic;&#13;
     <wire from="(460,850)" to="(1130,850)"/>
     <wire from="(320,990)" to="(350,990)"/>
     <wire from="(320,1050)" to="(350,1050)"/>
+    <wire from="(260,1210)" to="(860,1210)"/>
     <wire from="(1130,470)" to="(1290,470)"/>
     <wire from="(400,1050)" to="(480,1050)"/>
     <wire from="(320,990)" to="(320,1050)"/>
@@ -7030,6 +7034,9 @@ end TCL_Generic;&#13;
     </comp>
     <comp lib="1" loc="(430,850)" name="NOT Gate">
       <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(260,1200)" name="Clock">
+      <a name="facing" val="south"/>
     </comp>
   </circuit>
   <circuit name="countdown_clock">
@@ -14126,7 +14133,9 @@ begin
 						ten_hour &lt;= ten_hour + 1;
 					end if;
 				elsif (set_hour = '1') then 
-					if (hour = 9) then
+					if (hour = 3 and ten_hour = 2) then
+						hour &lt;= (others =&gt; '0');
+					elsif (hour = 9) then
 						hour &lt;= (others =&gt; '0');
 					else
 						hour &lt;= hour + 1;
@@ -14168,6 +14177,7 @@ begin
 	   output_hunderth_sec &lt;= std_logic_vector(hunderth_sec);
 	end process;
 end type_architecture;
+
 </a>
       <a name="label" val="clock_counter_1"/>
     </comp>
