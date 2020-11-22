@@ -270,6 +270,7 @@ end TCL_Generic;&#13;
     <wire from="(2750,600)" to="(2750,2010)"/>
     <wire from="(2080,1000)" to="(2080,2010)"/>
     <wire from="(1350,1580)" to="(1550,1580)"/>
+    <wire from="(1590,1460)" to="(1600,1460)"/>
     <wire from="(2700,1600)" to="(2950,1600)"/>
     <wire from="(1540,1140)" to="(1630,1140)"/>
     <wire from="(310,650)" to="(310,1280)"/>
@@ -996,6 +997,9 @@ end TCL_Generic;&#13;
     </comp>
     <comp loc="(1820,1300)" name="clock24h_notgated"/>
     <comp lib="0" loc="(1820,1490)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(1590,1460)" name="Constant">
       <a name="value" val="0x0"/>
     </comp>
   </circuit>
@@ -5261,6 +5265,9 @@ end TCL_Generic;&#13;
       <a name="value" val="0x0"/>
     </comp>
     <comp loc="(960,180)" name="clock24h_notgated"/>
+    <comp lib="0" loc="(740,340)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
   </circuit>
   <circuit name="stopwatch_logic">
     <a name="circuit" val="stopwatch_logic"/>
@@ -6849,6 +6856,7 @@ end TCL_Generic;&#13;
     <wire from="(160,490)" to="(910,490)"/>
     <wire from="(570,900)" to="(610,900)"/>
     <wire from="(320,850)" to="(810,850)"/>
+    <wire from="(840,550)" to="(880,550)"/>
     <wire from="(810,630)" to="(810,650)"/>
     <wire from="(1130,550)" to="(1250,550)"/>
     <wire from="(520,1060)" to="(520,1080)"/>
@@ -6856,12 +6864,12 @@ end TCL_Generic;&#13;
     <wire from="(1270,510)" to="(1270,780)"/>
     <wire from="(1250,550)" to="(1250,820)"/>
     <wire from="(1250,550)" to="(1940,550)"/>
+    <wire from="(880,550)" to="(880,630)"/>
     <wire from="(170,430)" to="(910,430)"/>
     <wire from="(840,1030)" to="(860,1030)"/>
     <wire from="(1280,760)" to="(1550,760)"/>
     <wire from="(1290,470)" to="(1940,470)"/>
     <wire from="(250,1210)" to="(660,1210)"/>
-    <wire from="(1130,570)" to="(1140,570)"/>
     <wire from="(400,990)" to="(610,990)"/>
     <wire from="(1290,740)" to="(1550,740)"/>
     <wire from="(250,530)" to="(250,1210)"/>
@@ -6890,6 +6898,7 @@ end TCL_Generic;&#13;
     <wire from="(570,950)" to="(610,950)"/>
     <wire from="(1300,720)" to="(1550,720)"/>
     <wire from="(1300,450)" to="(1940,450)"/>
+    <wire from="(840,530)" to="(840,550)"/>
     <wire from="(480,1050)" to="(480,1080)"/>
     <wire from="(640,1000)" to="(640,1080)"/>
     <wire from="(230,970)" to="(270,970)"/>
@@ -6905,16 +6914,16 @@ end TCL_Generic;&#13;
     <wire from="(810,680)" to="(810,850)"/>
     <wire from="(320,990)" to="(350,990)"/>
     <wire from="(320,1050)" to="(350,1050)"/>
-    <wire from="(250,530)" to="(910,530)"/>
     <wire from="(230,1210)" to="(250,1210)"/>
     <wire from="(660,1050)" to="(660,1210)"/>
-    <wire from="(1140,570)" to="(1140,630)"/>
+    <wire from="(880,550)" to="(910,550)"/>
     <wire from="(1130,470)" to="(1290,470)"/>
     <wire from="(660,1050)" to="(790,1050)"/>
     <wire from="(400,1050)" to="(480,1050)"/>
+    <wire from="(250,530)" to="(840,530)"/>
+    <wire from="(810,630)" to="(880,630)"/>
     <wire from="(720,950)" to="(720,1010)"/>
     <wire from="(320,990)" to="(320,1050)"/>
-    <wire from="(810,630)" to="(1140,630)"/>
     <wire from="(570,900)" to="(570,950)"/>
     <wire from="(230,450)" to="(230,570)"/>
     <wire from="(140,510)" to="(910,510)"/>
@@ -6987,9 +6996,6 @@ end TCL_Generic;&#13;
     <comp lib="0" loc="(140,550)" name="Pin">
       <a name="label" val="b2_long"/>
     </comp>
-    <comp loc="(1130,410)" name="countdown_clock_display">
-      <a name="label" val="countdown_clock_display_1"/>
-    </comp>
     <comp lib="0" loc="(1550,600)" name="Constant">
       <a name="facing" val="south"/>
       <a name="width" val="7"/>
@@ -7036,6 +7042,12 @@ end TCL_Generic;&#13;
     </comp>
     <comp lib="1" loc="(540,1010)" name="OR Gate">
       <a name="facing" val="north"/>
+    </comp>
+    <comp loc="(1130,410)" name="clock24h_notgated"/>
+    <comp lib="0" loc="(910,570)" name="Constant"/>
+    <comp lib="0" loc="(910,530)" name="Constant">
+      <a name="width" val="2"/>
+      <a name="value" val="0x0"/>
     </comp>
   </circuit>
   <circuit name="countdown_clock">
@@ -10379,6 +10391,9 @@ end TCL_Generic;&#13;
     </comp>
     <comp lib="4" loc="(860,720)" name="D Flip-Flop"/>
     <comp loc="(1760,370)" name="clock24h_notgated"/>
+    <comp lib="0" loc="(1540,530)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
   </circuit>
   <circuit name="state5_game_statemachine">
     <a name="circuit" val="state5_game_statemachine"/>
@@ -13622,6 +13637,7 @@ end cdflipflop_logic;
     <wire from="(2490,270)" to="(2520,270)"/>
     <wire from="(2250,760)" to="(2270,760)"/>
     <wire from="(2560,1160)" to="(2570,1160)"/>
+    <wire from="(610,460)" to="(650,460)"/>
     <wire from="(1220,530)" to="(1220,600)"/>
     <wire from="(1130,520)" to="(1130,590)"/>
     <wire from="(2520,1240)" to="(2520,1300)"/>
@@ -13674,6 +13690,7 @@ end cdflipflop_logic;
     <wire from="(610,430)" to="(700,430)"/>
     <wire from="(820,390)" to="(820,450)"/>
     <wire from="(2660,240)" to="(2700,240)"/>
+    <wire from="(650,670)" to="(1360,670)"/>
     <wire from="(2500,310)" to="(2500,330)"/>
     <wire from="(1040,550)" to="(1070,550)"/>
     <wire from="(1650,740)" to="(2180,740)"/>
@@ -13789,6 +13806,7 @@ end cdflipflop_logic;
     <wire from="(2260,900)" to="(2270,900)"/>
     <wire from="(2180,1060)" to="(2190,1060)"/>
     <wire from="(1950,310)" to="(1950,320)"/>
+    <wire from="(650,460)" to="(650,670)"/>
     <wire from="(2550,700)" to="(2550,820)"/>
     <wire from="(2550,540)" to="(2550,660)"/>
     <wire from="(2550,380)" to="(2550,500)"/>
@@ -13898,6 +13916,7 @@ end cdflipflop_logic;
     <wire from="(1650,340)" to="(1650,740)"/>
     <wire from="(1940,290)" to="(1940,310)"/>
     <wire from="(1820,240)" to="(1930,240)"/>
+    <wire from="(1360,390)" to="(1360,670)"/>
     <wire from="(2250,710)" to="(2270,710)"/>
     <wire from="(2510,1260)" to="(2510,1300)"/>
     <wire from="(2510,1420)" to="(2510,1460)"/>
@@ -13922,6 +13941,7 @@ end cdflipflop_logic;
     <wire from="(610,210)" to="(1220,210)"/>
     <wire from="(1040,510)" to="(1090,510)"/>
     <wire from="(2550,210)" to="(2550,330)"/>
+    <wire from="(1360,390)" to="(1370,390)"/>
     <wire from="(2230,740)" to="(2230,750)"/>
     <wire from="(1940,250)" to="(1950,250)"/>
     <wire from="(1280,350)" to="(1280,410)"/>
@@ -13971,6 +13991,7 @@ entity clock_counter is
 	 set_ten_sec	: in std_logic;
 	 set_sec	: in std_logic;
 	 increment	: in std_logic;
+	 up0_down1	: in std_logic;
   ------------------------------------------------------------------------------
   --Insert ouput ports below
     output_ten_hour     : out  std_logic_vector(1 downto 0);
@@ -14008,7 +14029,7 @@ begin
 			tenth_sec &lt;= (others =&gt; '0');
 			hunderth_sec &lt;= (others =&gt; '0');
 			
-		elsif (rising_edge(clk) and enable = '1') then
+		elsif (rising_edge(clk) and enable = '1' and up0_down1 = '0') then
 			if (hunderth_sec = 9) then -- carry 100th sec
 				hunderth_sec &lt;= (others =&gt; '0'); 
 				if (tenth_sec = 9) then -- carry 10th sec
@@ -14047,6 +14068,46 @@ begin
 				end if;
 			else
 				hunderth_sec &lt;= hunderth_sec + 1; -- increment 0.01s
+			end if;
+		elsif (rising_edge(clk) and enable = '1' and up0_down1 = '1') then
+			if (hunderth_sec = 0) then -- carry 100th sec
+				hunderth_sec &lt;= to_unsigned(9, 4); 
+				if (tenth_sec = 0) then -- carry 10th sec
+					tenth_sec &lt;= to_unsigned(9, 4);
+					if (sec = 0) then -- carry sec
+						sec &lt;= to_unsigned(9, 4);
+						if (ten_sec = 0) then -- carry 10s
+							ten_sec &lt;= to_unsigned(5, 4);
+							if (min = 0) then -- carry 1 min
+								min &lt;= to_unsigned(9, 4);
+								if (ten_min = 0) then -- carry 10 min
+									ten_min &lt;= to_unsigned(5, 4);
+									if (hour = 0 and ten_hour = 0) then -- if 24h
+										hour &lt;= to_unsigned(3, 4);
+										ten_hour &lt;= to_unsigned(2, 2);
+									elsif (hour = 0) then -- carry 1h
+										ten_hour &lt;= ten_hour - 1;
+										hour &lt;= to_unsigned(9, 4);
+									else
+										hour &lt;= hour - 1; -- increment hour
+									end if;
+								else
+									ten_min &lt;= ten_min - 1; -- increment 10 min
+								end if;
+							else
+								min &lt;= min - 1; -- increment 1 min
+							end if;
+						else
+							ten_sec &lt;= ten_sec - 1; -- increment 10s
+						end if;
+					else
+						sec &lt;= sec - 1; -- increment 1s
+					end if;
+				else
+					tenth_sec &lt;= tenth_sec - 1; -- increment 0.1s
+				end if;
+			else
+				hunderth_sec &lt;= hunderth_sec - 1; -- increment 0.01s
 			end if;
 		elsif (rising_edge(clk) and increment = '1') then
 				if (set_ten_hour = '1') then 
@@ -14303,6 +14364,9 @@ end type_architecture;
       <a name="output" val="true"/>
       <a name="width" val="7"/>
       <a name="label" val="x7_s"/>
+    </comp>
+    <comp lib="0" loc="(610,460)" name="Pin">
+      <a name="label" val="up0_down1"/>
     </comp>
   </circuit>
   <circuit name="state6_piano">
