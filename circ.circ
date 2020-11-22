@@ -555,6 +555,7 @@ end TCL_Generic;&#13;
     <wire from="(1680,330)" to="(1710,330)"/>
     <wire from="(2470,2230)" to="(2510,2230)"/>
     <wire from="(1690,300)" to="(1730,300)"/>
+    <wire from="(1820,1460)" to="(1820,1490)"/>
     <wire from="(1960,320)" to="(1960,350)"/>
     <wire from="(1890,1020)" to="(1890,2010)"/>
     <wire from="(1570,560)" to="(1680,560)"/>
@@ -836,9 +837,6 @@ end TCL_Generic;&#13;
       <a name="fanout" val="7"/>
       <a name="incoming" val="7"/>
     </comp>
-    <comp loc="(1820,1300)" name="clock24h_display">
-      <a name="label" val="State_0_main_clock"/>
-    </comp>
     <comp lib="0" loc="(1910,2070)" name="Splitter">
       <a name="facing" val="south"/>
       <a name="fanout" val="7"/>
@@ -995,6 +993,10 @@ end TCL_Generic;&#13;
     </comp>
     <comp lib="0" loc="(2970,1640)" name="Ground">
       <a name="facing" val="north"/>
+    </comp>
+    <comp loc="(1820,1300)" name="clock24h_notgated"/>
+    <comp lib="0" loc="(1820,1490)" name="Constant">
+      <a name="value" val="0x0"/>
     </comp>
   </circuit>
   <circuit name="binary_to_display_code">
