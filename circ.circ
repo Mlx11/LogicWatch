@@ -14272,36 +14272,43 @@ end type_architecture;
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="7"/>
+      <a name="label" val="Output_bus_1"/>
     </comp>
     <comp lib="0" loc="(2560,680)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="7"/>
+      <a name="label" val="Output_bus_2"/>
     </comp>
     <comp lib="0" loc="(2560,840)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="7"/>
+      <a name="label" val="Output_bus_3"/>
     </comp>
     <comp lib="0" loc="(2560,1000)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="7"/>
+      <a name="label" val="Output_bus_4"/>
     </comp>
     <comp lib="0" loc="(2560,1160)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="7"/>
+      <a name="label" val="Output_bus_5"/>
     </comp>
     <comp lib="0" loc="(2560,1320)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="7"/>
+      <a name="label" val="Output_bus_6"/>
     </comp>
     <comp lib="0" loc="(2560,1480)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="7"/>
+      <a name="label" val="Output_bus_7"/>
     </comp>
   </circuit>
   <circuit name="state6_piano">
