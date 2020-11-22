@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/micha/Documents/EPFL/Spacecraft Team/OBC Fall20/code/modelsim
+Ecdflipflop
+Z0 w1605880137
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/Users/micha/Documents/EPFL/BA3/EE_110/Logisim/LogicWatch/modelsim
+Z4 8C:/Users/micha/Documents/EPFL/BA3/EE_110/Logisim/LogicWatch/hdl_export/D_flip_flop.vhd
+Z5 FC:/Users/micha/Documents/EPFL/BA3/EE_110/Logisim/LogicWatch/hdl_export/D_flip_flop.vhd
+l0
+L10
+VZJc3l5D9JW6PZik;Ab=PN3
+!s100 B;SNd>R<H[nJmPQBzGCl73
+Z6 OP;C;10.4a;61
+32
+Z7 !s110 1606065181
+!i10b 1
+Z8 !s108 1606065181.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/micha/Documents/EPFL/BA3/EE_110/Logisim/LogicWatch/hdl_export/D_flip_flop.vhd|
+Z10 !s107 C:/Users/micha/Documents/EPFL/BA3/EE_110/Logisim/LogicWatch/hdl_export/D_flip_flop.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+Acdflipflop_logic
+R1
+R2
+Z13 DEx4 work 10 cdflipflop 0 22 ZJc3l5D9JW6PZik;Ab=PN3
+l24
+L23
+Z14 VKZlYX5d3RA:0gQdKFeNmL2
+Z15 !s100 obHQE<4lMb7a<iI3_5WIO1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eclock_counter
+Z16 w1606065171
+Z17 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R1
+R2
+R3
+Z18 8C:\Users\micha\Documents\EPFL\BA3\EE_110\Logisim\LogicWatch\hdl_export\clock_counter.vhd
+Z19 FC:\Users\micha\Documents\EPFL\BA3\EE_110\Logisim\LogicWatch\hdl_export\clock_counter.vhd
+l0
+L17
+VVCE`lRf`IkWmoC?TnDWH<0
+!s100 hi];@hYJ5TePbkGNA]ONn3
+R6
+32
+R7
+!i10b 1
+R8
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\micha\Documents\EPFL\BA3\EE_110\Logisim\LogicWatch\hdl_export\clock_counter.vhd|
+Z21 !s107 C:\Users\micha\Documents\EPFL\BA3\EE_110\Logisim\LogicWatch\hdl_export\clock_counter.vhd|
+!i113 1
+R11
+R12
+Atype_architecture
+R17
+R1
+R2
+DEx4 work 13 clock_counter 0 22 VCE`lRf`IkWmoC?TnDWH<0
+l55
+L46
+VDRccn2neQkc6C4A@OeG@i2
+!s100 bZ12?2X@_NP<[H4iXTmW=3
+R6
+32
+R7
+!i10b 1
+R8
+R20
+R21
+!i113 1
+R11
+R12

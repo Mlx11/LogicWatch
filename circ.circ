@@ -5247,9 +5247,6 @@ end TCL_Generic;&#13;
     <comp lib="0" loc="(740,280)" name="Ground">
       <a name="facing" val="north"/>
     </comp>
-    <comp loc="(960,180)" name="clock24h_display">
-      <a name="label" val="clock24h_display_1"/>
-    </comp>
     <comp lib="0" loc="(740,200)" name="Ground">
       <a name="facing" val="north"/>
     </comp>
@@ -5261,6 +5258,7 @@ end TCL_Generic;&#13;
       <a name="width" val="2"/>
       <a name="value" val="0x0"/>
     </comp>
+    <comp loc="(960,180)" name="clock24h_notgated"/>
   </circuit>
   <circuit name="stopwatch_logic">
     <a name="circuit" val="stopwatch_logic"/>
@@ -10096,8 +10094,8 @@ end TCL_Generic;&#13;
     <wire from="(1770,400)" to="(2040,400)"/>
     <wire from="(1320,630)" to="(1450,630)"/>
     <wire from="(1690,740)" to="(1700,740)"/>
-    <wire from="(1450,430)" to="(1540,430)"/>
     <wire from="(1050,810)" to="(1210,810)"/>
+    <wire from="(1450,430)" to="(1540,430)"/>
     <wire from="(1090,510)" to="(1180,510)"/>
     <wire from="(1740,810)" to="(1770,810)"/>
     <wire from="(1070,390)" to="(1090,390)"/>
@@ -10115,8 +10113,8 @@ end TCL_Generic;&#13;
     <wire from="(2060,320)" to="(2060,340)"/>
     <wire from="(1360,550)" to="(1400,550)"/>
     <wire from="(1270,410)" to="(1270,440)"/>
-    <wire from="(1500,370)" to="(1540,370)"/>
     <wire from="(1730,710)" to="(1730,730)"/>
+    <wire from="(1500,370)" to="(1540,370)"/>
     <wire from="(1770,390)" to="(1770,400)"/>
     <wire from="(1180,510)" to="(1180,580)"/>
     <wire from="(1050,500)" to="(1050,570)"/>
@@ -10216,9 +10214,6 @@ end TCL_Generic;&#13;
       <a name="label" val="clk"/>
     </comp>
     <comp lib="4" loc="(1340,730)" name="D Flip-Flop"/>
-    <comp loc="(1760,370)" name="clock24h_display">
-      <a name="label" val="clock24h_display_1"/>
-    </comp>
     <comp lib="1" loc="(1420,600)" name="OR Gate">
       <a name="negate1" val="true"/>
     </comp>
@@ -10381,6 +10376,7 @@ end TCL_Generic;&#13;
       <a name="size" val="30"/>
     </comp>
     <comp lib="4" loc="(860,720)" name="D Flip-Flop"/>
+    <comp loc="(1760,370)" name="clock24h_notgated"/>
   </circuit>
   <circuit name="state5_game_statemachine">
     <a name="circuit" val="state5_game_statemachine"/>

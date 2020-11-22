@@ -37,8 +37,7 @@ entity clock_counter is
 	 output_ten_sec     : out  std_logic_vector(3 downto 0);
 	 output_sec     : out  std_logic_vector(3 downto 0);
 	 output_tenth_sec     : out  std_logic_vector(3 downto 0);
-	 output_hunderth_sec     : out  std_logic_vector(3 downto 0);
-	 output_debug	: out std_logic_vector(7 downto 0)
+	 output_hunderth_sec     : out  std_logic_vector(3 downto 0)
     );
 end clock_counter;
 
@@ -53,7 +52,6 @@ architecture type_architecture of clock_counter is
 	signal sec     : unsigned(3 downto 0);
 	signal tenth_sec     : unsigned(3 downto 0);
 	signal hunderth_sec     : unsigned(3 downto 0);
-	signal increment_counter: unsigned(7 downto 0);
 begin
 	Reg_proc: process(clk, reset)
 	begin
@@ -66,7 +64,6 @@ begin
 			sec <= (others => '0');
 			tenth_sec <= (others => '0');
 			hunderth_sec <= (others => '0');
-			increment_counter <= (others => '0');
 			
 		elsif (rising_edge(clk) and enable = '1') then
 			if (hunderth_sec = 9) then -- carry 100th sec
@@ -108,9 +105,7 @@ begin
 			else
 				hunderth_sec <= hunderth_sec + 1; -- increment 0.01s
 			end if;
-		elsif (rising_edge(clk)) then
-			if (increment_counter = 50) then -- increment every 50 ticks
-				increment_counter <= (others => '0');
+		elsif (rising_edge(clk) and increment = '1') then
 				if (set_ten_hour = '1') then 
 					if (ten_hour = 2) then
 						ten_hour <= (others => '0');
@@ -148,9 +143,6 @@ begin
 						sec <= sec + 1;
 					end if;
 				end if;
-			else
-				increment_counter <= increment_counter + 1;
-			end if;
 		end if;
 		
 		output_ten_hour <= std_logic_vector(ten_hour);
@@ -161,6 +153,5 @@ begin
 	   output_sec <= std_logic_vector(sec);
 	   output_tenth_sec <= std_logic_vector(tenth_sec);
 	   output_hunderth_sec <= std_logic_vector(hunderth_sec);
-		output_debug <= std_logic_vector(increment_counter);
 	end process;
 end type_architecture;
