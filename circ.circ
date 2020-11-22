@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project source="2.15.0" version="1.0">
-This file is intended to be loaded by Logisim-evolution (https://github.com/reds-heig/logisim-evolution).
-<lib desc="#Wiring" name="0">
+  This file is intended to be loaded by Logisim-evolution (https://github.com/reds-heig/logisim-evolution).
+
+  <lib desc="#Wiring" name="0">
     <tool name="Splitter">
       <a name="facing" val="west"/>
     </tool>
     <tool name="Pin">
+      <a name="facing" val="west"/>
+    </tool>
+    <tool name="Constant">
       <a name="facing" val="west"/>
     </tool>
     <tool name="Ground">
@@ -6690,10 +6694,10 @@ end TCL_Generic;&#13;
     <wire from="(790,130)" to="(790,730)"/>
     <wire from="(820,910)" to="(820,930)"/>
     <wire from="(770,800)" to="(770,820)"/>
-    <wire from="(840,910)" to="(840,930)"/>
-    <wire from="(880,910)" to="(880,930)"/>
     <wire from="(240,130)" to="(790,130)"/>
     <wire from="(860,910)" to="(860,930)"/>
+    <wire from="(840,910)" to="(840,930)"/>
+    <wire from="(880,910)" to="(880,930)"/>
     <wire from="(580,1040)" to="(690,1040)"/>
     <wire from="(560,930)" to="(560,950)"/>
     <wire from="(440,620)" to="(440,710)"/>
@@ -10836,6 +10840,7 @@ end TCL_Generic;&#13;
     <wire from="(670,190)" to="(670,310)"/>
     <wire from="(1980,520)" to="(2070,520)"/>
     <wire from="(1450,410)" to="(1450,520)"/>
+    <wire from="(680,410)" to="(680,460)"/>
     <wire from="(1790,420)" to="(1820,420)"/>
     <wire from="(2290,430)" to="(2330,430)"/>
     <wire from="(2180,420)" to="(2180,510)"/>
@@ -10952,6 +10957,7 @@ end TCL_Generic;&#13;
     <wire from="(2120,430)" to="(2160,430)"/>
     <wire from="(1620,420)" to="(1650,420)"/>
     <wire from="(2020,420)" to="(2050,420)"/>
+    <wire from="(680,460)" to="(690,460)"/>
     <wire from="(1810,520)" to="(1900,520)"/>
     <wire from="(1540,480)" to="(1540,520)"/>
     <wire from="(2290,420)" to="(2320,420)"/>
@@ -11070,6 +11076,9 @@ end TCL_Generic;&#13;
       <a name="facing" val="south"/>
     </comp>
     <comp lib="0" loc="(660,310)" name="Clock"/>
+    <comp lib="0" loc="(690,460)" name="Constant">
+      <a name="facing" val="west"/>
+    </comp>
   </circuit>
   <circuit name="gated_clock_preventer">
     <a name="circuit" val="gated_clock_preventer"/>
@@ -12029,8 +12038,8 @@ end TCL_Generic;&#13;
     <wire from="(290,660)" to="(310,660)"/>
     <wire from="(390,120)" to="(410,120)"/>
     <wire from="(360,730)" to="(380,730)"/>
-    <wire from="(370,1060)" to="(390,1060)"/>
     <wire from="(320,2610)" to="(340,2610)"/>
+    <wire from="(370,1060)" to="(390,1060)"/>
     <wire from="(310,3880)" to="(330,3880)"/>
     <wire from="(290,4180)" to="(310,4180)"/>
     <wire from="(170,4200)" to="(310,4200)"/>
@@ -12211,8 +12220,8 @@ end TCL_Generic;&#13;
     <wire from="(250,3310)" to="(280,3310)"/>
     <wire from="(370,240)" to="(390,240)"/>
     <wire from="(400,3230)" to="(400,3340)"/>
-    <wire from="(320,2430)" to="(340,2430)"/>
     <wire from="(390,260)" to="(410,260)"/>
+    <wire from="(320,2430)" to="(340,2430)"/>
     <wire from="(310,3700)" to="(330,3700)"/>
     <wire from="(310,4020)" to="(330,4020)"/>
     <wire from="(290,4000)" to="(310,4000)"/>
@@ -12244,8 +12253,8 @@ end TCL_Generic;&#13;
     <wire from="(360,30)" to="(390,30)"/>
     <wire from="(290,2200)" to="(320,2200)"/>
     <wire from="(190,1550)" to="(190,1650)"/>
-    <wire from="(320,320)" to="(340,320)"/>
     <wire from="(310,630)" to="(330,630)"/>
+    <wire from="(320,320)" to="(340,320)"/>
     <wire from="(360,680)" to="(380,680)"/>
     <wire from="(320,1920)" to="(340,1920)"/>
     <wire from="(300,2540)" to="(320,2540)"/>
@@ -13514,12 +13523,12 @@ end TCL_Generic;&#13;
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="84">enable</text>
       <rect height="3" stroke="none" width="10" x="50" y="99"/>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="75" y="104">clk</text>
-      <circ-port height="8" pin="370,340" width="8" x="76" y="46"/>
       <circ-port height="8" pin="310,290" width="8" x="76" y="106"/>
-      <circ-port height="8" pin="360,260" width="8" x="46" y="96"/>
       <circ-port height="8" pin="410,200" width="8" x="46" y="76"/>
-      <circ-port height="8" pin="420,180" width="8" x="46" y="56"/>
       <circ-port height="10" pin="660,250" width="10" x="105" y="55"/>
+      <circ-port height="8" pin="420,180" width="8" x="46" y="56"/>
+      <circ-port height="8" pin="360,260" width="8" x="46" y="96"/>
+      <circ-port height="8" pin="370,340" width="8" x="76" y="46"/>
       <rect fill="none" height="61" stroke="#000000" stroke-width="2" width="40" x="60" y="50"/>
       <text fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="160" y="164">D_Flip_Flop</text>
       <polyline fill="none" points="61,95 69,100" stroke="#000000" stroke-width="4"/>
@@ -14690,9 +14699,9 @@ end type_architecture;
     <wire from="(270,9120)" to="(330,9120)"/>
     <wire from="(380,900)" to="(380,1050)"/>
     <wire from="(300,8120)" to="(300,8150)"/>
+    <wire from="(210,3320)" to="(250,3320)"/>
     <wire from="(270,820)" to="(310,820)"/>
     <wire from="(270,1460)" to="(310,1460)"/>
-    <wire from="(210,3320)" to="(250,3320)"/>
     <wire from="(210,2680)" to="(250,2680)"/>
     <wire from="(270,180)" to="(310,180)"/>
     <wire from="(310,7810)" to="(310,7830)"/>
@@ -15119,13 +15128,13 @@ end type_architecture;
     <wire from="(130,2280)" to="(130,2440)"/>
     <wire from="(150,2300)" to="(150,2460)"/>
     <wire from="(150,2940)" to="(150,3100)"/>
+    <wire from="(210,2360)" to="(210,2520)"/>
     <wire from="(110,5460)" to="(110,5620)"/>
+    <wire from="(300,3130)" to="(330,3130)"/>
+    <wire from="(150,4220)" to="(150,4380)"/>
     <wire from="(300,4410)" to="(330,4410)"/>
     <wire from="(110,4820)" to="(110,4980)"/>
     <wire from="(130,4200)" to="(130,4360)"/>
-    <wire from="(150,4220)" to="(150,4380)"/>
-    <wire from="(300,3130)" to="(330,3130)"/>
-    <wire from="(210,2360)" to="(210,2520)"/>
     <wire from="(360,8960)" to="(380,8960)"/>
     <wire from="(300,2490)" to="(330,2490)"/>
     <wire from="(310,1550)" to="(330,1550)"/>
@@ -15145,9 +15154,9 @@ end type_architecture;
     <wire from="(310,7970)" to="(310,8000)"/>
     <wire from="(210,1560)" to="(250,1560)"/>
     <wire from="(270,980)" to="(310,980)"/>
+    <wire from="(270,340)" to="(310,340)"/>
     <wire from="(270,1620)" to="(310,1620)"/>
     <wire from="(210,3480)" to="(250,3480)"/>
-    <wire from="(270,340)" to="(310,340)"/>
     <wire from="(270,2260)" to="(310,2260)"/>
     <wire from="(210,4760)" to="(250,4760)"/>
     <wire from="(270,4180)" to="(310,4180)"/>
@@ -15564,15 +15573,15 @@ end type_architecture;
     <wire from="(110,4340)" to="(110,4500)"/>
     <wire from="(130,2440)" to="(130,2600)"/>
     <wire from="(150,3100)" to="(150,3260)"/>
-    <wire from="(110,5620)" to="(110,5780)"/>
-    <wire from="(210,3160)" to="(210,3320)"/>
-    <wire from="(110,4980)" to="(110,5140)"/>
-    <wire from="(130,4360)" to="(130,4520)"/>
-    <wire from="(210,2520)" to="(210,2680)"/>
     <wire from="(300,3290)" to="(330,3290)"/>
-    <wire from="(150,4380)" to="(150,4540)"/>
+    <wire from="(110,5620)" to="(110,5780)"/>
     <wire from="(300,4570)" to="(330,4570)"/>
     <wire from="(360,6560)" to="(380,6560)"/>
+    <wire from="(210,2520)" to="(210,2680)"/>
+    <wire from="(210,3160)" to="(210,3320)"/>
+    <wire from="(150,4380)" to="(150,4540)"/>
+    <wire from="(110,4980)" to="(110,5140)"/>
+    <wire from="(130,4360)" to="(130,4520)"/>
     <wire from="(270,6780)" to="(300,6780)"/>
     <wire from="(360,9120)" to="(380,9120)"/>
     <wire from="(210,4440)" to="(210,4600)"/>
@@ -15589,14 +15598,14 @@ end type_architecture;
     <wire from="(290,6190)" to="(290,6200)"/>
     <wire from="(150,8770)" to="(250,8770)"/>
     <wire from="(210,1080)" to="(250,1080)"/>
-    <wire from="(210,3640)" to="(250,3640)"/>
-    <wire from="(270,1780)" to="(310,1780)"/>
-    <wire from="(290,8110)" to="(290,8130)"/>
-    <wire from="(210,1720)" to="(250,1720)"/>
-    <wire from="(300,9080)" to="(300,9100)"/>
     <wire from="(210,2360)" to="(250,2360)"/>
     <wire from="(270,1140)" to="(310,1140)"/>
     <wire from="(270,500)" to="(310,500)"/>
+    <wire from="(210,1720)" to="(250,1720)"/>
+    <wire from="(300,9080)" to="(300,9100)"/>
+    <wire from="(210,3640)" to="(250,3640)"/>
+    <wire from="(270,1780)" to="(310,1780)"/>
+    <wire from="(290,8110)" to="(290,8130)"/>
     <wire from="(270,2420)" to="(310,2420)"/>
     <wire from="(270,3700)" to="(310,3700)"/>
     <wire from="(270,4340)" to="(310,4340)"/>
@@ -15831,11 +15840,11 @@ end type_architecture;
     <wire from="(290,8640)" to="(290,8660)"/>
     <wire from="(150,560)" to="(150,720)"/>
     <wire from="(190,1240)" to="(190,1400)"/>
-    <wire from="(310,8770)" to="(330,8770)"/>
-    <wire from="(150,5040)" to="(150,5200)"/>
     <wire from="(300,3950)" to="(330,3950)"/>
     <wire from="(400,5340)" to="(420,5340)"/>
     <wire from="(310,8130)" to="(330,8130)"/>
+    <wire from="(310,8770)" to="(330,8770)"/>
+    <wire from="(150,5040)" to="(150,5200)"/>
     <wire from="(300,5230)" to="(330,5230)"/>
     <wire from="(300,5870)" to="(330,5870)"/>
     <wire from="(110,8200)" to="(110,8360)"/>
@@ -16021,10 +16030,10 @@ end type_architecture;
     <wire from="(110,1940)" to="(110,2100)"/>
     <wire from="(110,3860)" to="(110,4020)"/>
     <wire from="(110,4500)" to="(110,4660)"/>
+    <wire from="(210,3320)" to="(210,3480)"/>
+    <wire from="(300,3450)" to="(330,3450)"/>
     <wire from="(400,4200)" to="(420,4200)"/>
     <wire from="(300,4730)" to="(330,4730)"/>
-    <wire from="(300,3450)" to="(330,3450)"/>
-    <wire from="(210,3320)" to="(210,3480)"/>
     <wire from="(110,5140)" to="(110,5300)"/>
     <wire from="(130,4520)" to="(130,4680)"/>
     <wire from="(380,6740)" to="(400,6740)"/>
@@ -17574,8 +17583,8 @@ end type_architecture;
     <wire from="(160,960)" to="(260,960)"/>
     <wire from="(180,110)" to="(270,110)"/>
     <wire from="(370,390)" to="(400,390)"/>
-    <wire from="(310,100)" to="(330,100)"/>
     <wire from="(280,1030)" to="(300,1030)"/>
+    <wire from="(310,100)" to="(330,100)"/>
     <wire from="(280,390)" to="(300,390)"/>
     <wire from="(160,160)" to="(310,160)"/>
     <wire from="(310,260)" to="(330,260)"/>
@@ -17714,10 +17723,10 @@ end type_architecture;
     <wire from="(280,20)" to="(310,20)"/>
     <wire from="(360,900)" to="(390,900)"/>
     <wire from="(180,890)" to="(180,990)"/>
-    <wire from="(280,350)" to="(300,350)"/>
-    <wire from="(280,1310)" to="(300,1310)"/>
     <wire from="(300,450)" to="(320,450)"/>
     <wire from="(280,1070)" to="(300,1070)"/>
+    <wire from="(280,350)" to="(300,350)"/>
+    <wire from="(280,1310)" to="(300,1310)"/>
     <wire from="(360,110)" to="(380,110)"/>
     <wire from="(310,620)" to="(330,620)"/>
     <wire from="(360,830)" to="(380,830)"/>
