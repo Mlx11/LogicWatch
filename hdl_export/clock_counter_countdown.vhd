@@ -1,4 +1,4 @@
-----------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 -- HEIG-VD, institute REDS, 1400 Yverdon-les-Bains
 -- Project :
 -- File    :
@@ -198,3 +198,4 @@ begin
 	   output_hunderth_sec <= std_logic_vector(hunderth_sec);
 	end process;
 end type_architecture;
+
