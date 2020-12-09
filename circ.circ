@@ -862,7 +862,7 @@ end TCL_Generic;&#13;
       <a name="incoming" val="4"/>
     </comp>
     <comp lib="5" loc="(230,490)" name="Button">
-      <a name="label" val="Button_1"/>
+      <a name="label" val="Button_up"/>
     </comp>
     <comp lib="2" loc="(2780,2050)" name="Multiplexer">
       <a name="facing" val="south"/>
@@ -885,7 +885,7 @@ end TCL_Generic;&#13;
       <a name="value" val="0x0"/>
     </comp>
     <comp lib="5" loc="(220,570)" name="Button">
-      <a name="label" val="Button_2"/>
+      <a name="label" val="Button_down"/>
     </comp>
     <comp lib="5" loc="(2640,2150)" name="7-Segment Display">
       <a name="label" val="L_7_Segment_Display_5"/>
@@ -936,12 +936,12 @@ end TCL_Generic;&#13;
     <comp lib="0" loc="(3060,1590)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="label" val="high1"/>
+      <a name="label" val="high_buzzer_2"/>
     </comp>
     <comp lib="0" loc="(3060,1570)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="label" val="gnd1"/>
+      <a name="label" val="gnd_buzzer_2"/>
     </comp>
     <comp lib="0" loc="(3040,1570)" name="Ground">
       <a name="facing" val="north"/>
@@ -952,12 +952,12 @@ end TCL_Generic;&#13;
     <comp lib="0" loc="(3190,1610)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="label" val="gnd2"/>
+      <a name="label" val="gnd_buzzer_3"/>
     </comp>
     <comp lib="0" loc="(3190,1630)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="label" val="high2"/>
+      <a name="label" val="high_buzzer_3"/>
     </comp>
     <comp lib="0" loc="(150,1280)" name="Clock">
       <a name="highDuration" val="640"/>
@@ -977,7 +977,7 @@ end TCL_Generic;&#13;
     <comp lib="0" loc="(3190,1550)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="label" val="high0"/>
+      <a name="label" val="high_buzzer_1"/>
     </comp>
     <comp lib="0" loc="(3170,1530)" name="Ground">
       <a name="facing" val="north"/>
@@ -985,7 +985,7 @@ end TCL_Generic;&#13;
     <comp lib="0" loc="(3190,1530)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="label" val="gnd0"/>
+      <a name="label" val="gnd_buzzer1"/>
     </comp>
     <comp loc="(3220,880)" name="time_comparator">
       <a name="label" val="alarm_clock_interrupter_1"/>
@@ -995,6 +995,22 @@ end TCL_Generic;&#13;
     </comp>
     <comp lib="0" loc="(1600,1460)" name="Constant">
       <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="9" loc="(3208,1681)" name="Text">
+      <a name="text" val="Connect those pins such that the 3 buzzers are connected. Buzzer 1&amp;2 are for the piano, buzzer 3 for the alarm"/>
+      <a name="font" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="9" loc="(1921,2451)" name="Text">
+      <a name="text" val="Place those LEDs such that they are on top of the dipswitches as they indicate the state"/>
+      <a name="font" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="9" loc="(2237,2345)" name="Text">
+      <a name="text" val="place this led the most right"/>
+      <a name="font" val="SansSerif plain 12"/>
+    </comp>
+    <comp lib="9" loc="(2353,2259)" name="Text">
+      <a name="text" val="Keep those displays in order as they display the time"/>
+      <a name="font" val="SansSerif plain 12"/>
     </comp>
   </circuit>
   <circuit name="main_statemachine">
